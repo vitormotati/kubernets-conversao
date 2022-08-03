@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod
+spec:
+  containers:
+    - name: web
+      image: vitormota/conversao-temperatura:v1
+      ports:
+        - containerPort: 80
